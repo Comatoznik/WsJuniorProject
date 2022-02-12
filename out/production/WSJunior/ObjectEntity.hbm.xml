@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="sample.Entitys.ObjectEntity" table="object" schema="wsjunior">
+        <id name="id">
+            <column name="Id" sql-type="int"/>
+        </id>
+        <property name="city">
+            <column name="city" sql-type="text" not-null="true"/>
+        </property>
+        <property name="street">
+            <column name="street" sql-type="text" not-null="true"/>
+        </property>
+        <property name="numhouse">
+            <column name="numhouse" sql-type="int" not-null="true"/>
+        </property>
+        <property name="coordinate">
+            <column name="Coordinate" sql-type="int" not-null="true"/>
+        </property>
+        <property name="idreeltor">
+            <column name="idreeltor" sql-type="int" not-null="true"/>
+        </property>
+        <property name="idclient">
+            <column name="idclient" sql-type="int"/>
+        </property>
+    </class>
+</hibernate-mapping>

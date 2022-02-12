@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="sample.Entitys.HouseEntity" table="house" schema="wsjunior">
+        <id name="idHouse">
+            <column name="IdHouse" sql-type="int"/>
+        </id>
+        <property name="height">
+            <column name="Height" sql-type="int" not-null="true"/>
+        </property>
+        <property name="roomCount">
+            <column name="RoomCount" sql-type="int" not-null="true"/>
+        </property>
+        <property name="size">
+            <column name="Size" sql-type="int" not-null="true"/>
+        </property>
+        <property name="sizeEarth">
+            <column name="SizeEarth" sql-type="int" not-null="true"/>
+        </property>
+        <property name="idObject">
+            <column name="idObject" sql-type="int" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
